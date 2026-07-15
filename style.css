@@ -1,0 +1,173 @@
+/* ====== variables de paleta de colores ======= */ 
+:root {
+    --color-negro: #0d0d0d;
+    --color-negro-suave: #1a1a1a;
+    --color-dorado: #d4af37;
+    --color-dorado-claro: #f0d878;
+    --color-blanco: #ffffff;
+    --color-texto: #e0e0e0;
+} 
+/*   ========== Reset de valores ========= */
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ====== Estilos Generales del Body ====== */
+
+body { 
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--color-negro);
+    color: var(--color-texto);
+}
+
+/* ======= Header  ====== */ 
+
+header {
+    background-color: var(--color-negro-suave);
+    padding: 20px 40px;
+}
+
+/* ======== Navegacion ======== */ 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ======== Logo del Equipo ====== */ 
+
+.logo {
+    color: var(--color-dorado);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* ======== Menu de navegacion ( Lista de Enlaces ) ===========*/ 
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+/* ========  Enlaces del Menu ======= */ 
+nav a {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* ======== Efecto Hover en Enlaces del  Menu  al pasar el mouse encima ====== */ 
+
+nav a:hover {
+    color: var(--color-dorado);
+}
+
+/* ================== Seccion de Bienvenida  ==================*/ 
+
+#inicio {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#inicio h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: var(--color-dorado);
+}
+
+#inicio p {
+    font-size: 20px;
+    color: var(--color-texto);
+    margin-bottom: 30px;
+}
+
+/* ======== Boton de Llamada a la Accion ======= */
+
+.btn   {
+    background-color: var(--color-dorado);
+    color: var(--color-negro);
+    padding: 15px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn:hover {
+    background-color: var(--color-dorado-claro);
+}
+
+/* ======== Seccion de Plantilla (jugadores) ======== */
+
+#plantilla {
+    padding: 60px 40px;
+}
+
+#plantilla h2 {
+    text-align: center;
+    font-size: 36px;
+    color: var(--color-dorado);
+    margin-bottom: 40px;
+}
+
+#plantilla .grid-jugadores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+article {
+    background-color: var(--color-negro-suave);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--color-dorado);
+    text-align: center;
+}
+
+article h3 {
+    color: var(--color-dorado);
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+article p {
+    font-size: 16px;
+    color: var(--color-texto);
+}
+
+/* =========== Seccion de Proximos Partidos =========== */ 
+
+#partidos {
+    padding: 60px 40px;
+
+}
+
+#partidos h2 {
+    text-align: center;
+    font-size: 36px;
+    color: var(--color-dorado);
+    margin-bottom: 40px;
+    
+}
+
+#partidos .grid-partidos { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    
+}
+
+
