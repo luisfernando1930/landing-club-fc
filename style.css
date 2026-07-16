@@ -235,4 +235,38 @@ footer > p {
     opacity: 0.7;
 }
 
+/* ======== Responsive: Celulares, Tablets, otros Dispositivos ======= */
+@media (max-width: 768px) {
+    #plantilla .grid-jugadores,
+    #partidos .grid-partidos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ======== Responsive: Celulares ====== */
+@media (max-width: 480px) {
+    #plantilla .grid-jugadores,
+    #partidos .grid-partidos {
+        grid-template-columns: 1fr;
+    }
+
+    #inicio h1 {
+        font-size: 32px;
+    }
+
+    #inicio p {
+        font-size: 16px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 
