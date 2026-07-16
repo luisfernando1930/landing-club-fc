@@ -170,4 +170,69 @@ article p {
     
 }
 
+/* ================  Footer (contacto  y redes sociales)  ========  */
+
+footer {
+    background-color: var(--color-negro-suave);
+    padding: 60px 40px 30px;
+    text-align: center;
+
+}
+
+#contacto h2 { 
+    color: var(--color-dorado);
+    font-size: 35px;
+    margin-bottom: 40px;
+
+}
+
+#contacto address {
+    font-style: normal;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+#contacto address a {
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+#contacto address a:hover {
+    color: var(--color-dorado);
+}
+
+#contacto address p {
+    margin-bottom: 15px;
+
+}
+
+
+/* ================== Lista de Redes Sociales ============ */ 
+
+#contacto ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+#contacto ul a {
+    color: var(--color-dorado);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contacto ul a:hover {
+    color: var(--color-dorado-claro);
+}
+
+/* ======== Copyright ======== */
+
+footer > p {
+    font-size: 14px;
+    color: var(--color-texto);
+    opacity: 0.7;
+}
+
 
